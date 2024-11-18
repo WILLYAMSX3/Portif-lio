@@ -1,0 +1,117 @@
+.experiencia{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 40px 15px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 150px;
+}
+
+.experiencia h1{
+    font-size: 9rem;
+    text-transform: uppercase;
+    word-break: break-all;/*Propriedade que permite a quebra de linha*/
+    line-height: 1;/*Propriedade para manipular a altura ou o espaçamento entre linhas*/
+    color: #E0E0E0;
+    max-width: 4ch;/*Largura do texto*/
+}
+
+.experiencia p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 50ch;/*Propriedade para alterar a largura do texto*/
+    color: #525252;
+    margin-bottom: 60px;
+}
+
+.experiencia_profissional{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+}
+
+.experiencia_ano{
+    position:absolute;
+    top: 24px;
+    left: -100px;
+    font-size: 0.8rem;
+    color: #525252;
+    font-weight: 400;
+}
+
+.experiencia_titulo{
+    font-size: 1.12rem;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+#experiencia_paragrafo{
+    font-size: 0.87rem;
+    line-height: 20px;
+}
+
+.experiencia_habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 0.87rem;
+}
+
+.experiencia_habilidades li{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 5px 10px;
+    line-height: 32px;
+    font-size: 0.87rem;
+    color: #141414;
+    height: 40px;
+}
+
+@media (max-width: 900px){
+    .experiencia{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .experiencia h1{
+        margin: 0 auto;
+    }
+
+    .experiencia p{
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .experiencia_ano{
+        position: initial; /* Iniial é usado prar definir a propriedade css com o seu valor pradrão*/
+        order: 1;
+        
+    }
+
+    #experiencia_paragrafo{
+        text-align: left;
+        margin: initial;
+    }
+}
+
+@media (max-width: 580px){
+    .experiencia_profissional{
+       grid-template-columns: 1fr;
+    }
+
+    .experiencia h1{
+        font-size: 7rem;
+    }
+
+    .experiencia p{
+        font-size: 1.2rem;
+    }
+}

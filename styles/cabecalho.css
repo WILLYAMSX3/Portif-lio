@@ -1,0 +1,50 @@
+#cabecalho{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;/*Propriedade que faz o com que o elemento que ta atrás tome a frente*/
+}
+
+#cabecalho h1{
+    font-size: 3.12rem;
+    color: #141414;
+    text-transform: uppercase;
+
+}
+
+.cabecalho_menu_ul{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cabecalho_menu_ul a{
+    color: #141414;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+    display: block;
+    padding: 10px 20px;
+}
+
+/*Responsividade*/
+@media (max-width: 701px){
+    #cabecalho{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .cabecalho_menu_ul a{
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        color: #141414;
+        align-items: center;
+    }
+}
