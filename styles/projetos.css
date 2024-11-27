@@ -69,3 +69,11 @@
 .img_projeto {
     display: flex;
 }
+
+.tituloimg{
+    display: none;
+}
+
+.js_tituloimg{
+    display: flex;
+}
