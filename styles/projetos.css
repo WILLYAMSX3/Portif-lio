@@ -27,18 +27,34 @@
 .projetos_titulos p{
     font-size: 1.22rem;
     font-style: oblique;
-
 }
 
 .projetos_images{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas:
+    "p1 p2"
+    "p3 p4"
+    ;
+}
+
+.p1{
+    grid-area: p1;
+}
+
+.p2{
+    grid-area: p2;
+}
+
+.p3{
+    grid-area: p3;
 }
 
 .projetos_images img{
-    width: 30%;
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
     cursor: pointer;
     opacity: 0.5;
@@ -48,4 +64,16 @@
 
 .projetos_images img:hover{
     opacity: 1;
+}
+
+.img_projeto {
+    display: flex;
+}
+
+.tituloimg{
+    display: none;
+}
+
+.js_tituloimg{
+    display: flex;
 }

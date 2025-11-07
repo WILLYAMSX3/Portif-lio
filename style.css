@@ -1,6 +1,6 @@
-@import url('global.css');
-@import url('cabecalho.css');
-@import url('main.css');
-@import url('experiencia.css')
-;@import url('projetos.css');
-@import url('rodape.css');
+@import url('styles/global.css');
+@import url('styles/cabecalho.css');
+@import url('styles/main.css');
+@import url('styles/experiencia.css')
+;@import url('styles/projetos.css');
+@import url('styles/rodape.css');
