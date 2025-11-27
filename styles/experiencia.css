@@ -17,6 +17,7 @@
     max-width: 4ch;/*Largura do texto*/
 }
 
+
 .experiencia p{
     font-size: 1.5rem;
     font-weight: 400;
@@ -24,6 +25,11 @@
     max-width: 50ch;/*Propriedade para alterar a largura do texto*/
     color: #E0E0E0;
     margin-bottom: 60px;
+}
+
+#experiencia_paragrafo{
+    margin-bottom: 30px;
+    color : #000000;
 }
 
 .experiencia_profissional{
