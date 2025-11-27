@@ -3,7 +3,7 @@
     max-width: 1350px;
     margin: 0 auto;
     display: flex;
-    padding: 15px;
+    padding: 10px;
     justify-content: space-between;
     align-items: center;
     position: sticky;
@@ -34,7 +34,7 @@
     text-decoration: none;
     font-size: 1.125rem;
     font-weight: 600;
-    display: block;
+    display: block; 
     padding: 10px 20px;
 }
 
